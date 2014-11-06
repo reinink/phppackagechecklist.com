@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PHP Package Checklist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/all.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</head>
+<body>
+
+<a href="https://github.com/reinink/phppackagechecklist.com">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+</a>
+
+<div class="intro">
+    <img class="intro__logo" src="/img/logo.png" alt="">
+    <h1 class="intro__title">PHP Package Checklist</h1>
+    <div class="intro__intro">There's a lot that goes into a successful PHP package beyond simply having some useful code. The following checklist will help ensure that your package is taken seriously by the rest of the PHP community.</div>
+    <div class="intro__instructions">Click to toggle items and create a custom report</div>
+</div>
+
+<ul class="checklist">
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_1" value="1" checked="checked">
+        <label class="checklist__label" for="item_1"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Pick a name wisely</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Ensure the name isn't already used by another project.</li>
+                <li class="checklist__details_item">Use this name as your namespace.</li>
+                <li class="checklist__details_item">Avoid using last names or personal handles in namespaces.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_2" value="2" checked="checked">
+        <label class="checklist__label" for="item_2"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Host source on GitHub</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">GitHub is free to use for public projects.</li>
+                <li class="checklist__details_item">Very helpful for managing issues, feature requests and pull requests.</li>
+                <li class="checklist__details_item">Viable alternative: <a href="https://bitbucket.org/">Bitbucket</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_3" value="3" checked="checked">
+        <label class="checklist__label" for="item_3"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Autoloader friendly</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Use a <a href="http://www.php-fig.org/psr/psr-4/">PSR-4</a> compatible autoloader namespace.</li>
+                <li class="checklist__details_item">Place code in the <code>src</code> folder.</li>
+                <li class="checklist__details_item">Exclude non-essential files in <a href="https://www.reddit.com/r/PHP/comments/2jzp6k/i_dont_need_your_tests_in_my_production">.gitattributes</a>.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_4" value="4" checked="checked">
+        <label class="checklist__label" for="item_4"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Distribute via Compser</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Make your library available via <a href="https://getcomposer.org/">Composer</a>, the dependency manager for PHP.</li>
+                <li class="checklist__details_item">List on <a href="https://packagist.org/">Packagist</a>, the main Composer repository.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_5" value="5" checked="checked">
+        <label class="checklist__label" for="item_5"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Follow a coding style</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Highly recommended that you adhere to <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PSR-2</a> coding style guide.</li>
+                <li class="checklist__details_item">Automatically check coding standards using <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a>.</li>
+                <li class="checklist__details_item">Do this quickly with an automated code fixer like <a href="http://cs.sensiolabs.org/">PHP Coding Standards Fixer</a>.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_6" value="6" checked="checked">
+        <label class="checklist__label" for="item_6"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Write unit tests</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Aim for at least 80% coverage in your first version.</li>
+                <li class="checklist__details_item"><a href="https://phpunit.de/">PHPUnit</a> is the de facto PHP unit testing framework.</li>
+                <li class="checklist__details_item">Viable alternative: <a href="http://www.phpspec.net/">phpspec</a>, <a href="http://behat.org">Behat</a>, <a href="http://codeception.com/">Codeception</a>.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_7" value="7" checked="checked">
+        <label class="checklist__label" for="item_7"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">DocBlock your code</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">DocBlock serve as inline documentation.</li>
+                <li class="checklist__details_item">They can also improve code completion in IDE, like <a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a>.</li>
+                <li class="checklist__details_item">Can be automatically converted into API documentation, see <a href="http://www.phpdoc.org/">phpDocumentor</a>.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_8" value="8" checked="checked">
+        <label class="checklist__label" for="item_8"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Use semantic versioning</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Use <a href="http://semver.org/">Semantic Versioning</a> to manage version numbers.</li>
+                <li class="checklist__details_item">Follow the MAJOR.MINOR.PATCH system.</li>
+                <li class="checklist__details_item">Allows devs to upgrade safely, without worry about breaking changes.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_9" value="9" checked="checked">
+        <label class="checklist__label" for="item_9"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Keep a changelog</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Show notable changes that have been made between releases.</li>
+                <li class="checklist__details_item">Consider following the <a href="http://keepachangelog.com/">Keep a CHANGELOG</a> format.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_10" value="10" checked="checked">
+        <label class="checklist__label" for="item_10"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Use continuous integration</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Use a service to automatically check coding standards and run tests.</li>
+                <li class="checklist__details_item">Great way to run tests on multiple versions of PHP.</li>
+                <li class="checklist__details_item">Can be automatically run when pull requests are submitted.</li>
+                <li class="checklist__details_item">See <a href="https://travis-ci.org/">Travis-CI</a> and <a href="https://scrutinizer-ci.com/">Scrutinizer</a>.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_11" value="11" checked="checked">
+        <label class="checklist__label" for="item_11"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Write extensive documentation</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Good documentation is vital to the success of any package.</li>
+                <li class="checklist__details_item">At a minimum include a detailed README in your repository.</li>
+                <li class="checklist__details_item">Consider hosting documentation on <a href="https://pages.github.com/">GitHub Pages</a>.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_12" value="12" checked="checked">
+        <label class="checklist__label" for="item_12"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Include a license</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Including a license is a simple step that can help protect the work you've done.</li>
+                <li class="checklist__details_item">Most PHP projects use the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</li>
+                <li class="checklist__details_item">At a minimum, include a LICENSE file with your library.</li>
+                <li class="checklist__details_item">Also consider adding your license in the <a href="http://www.phpdoc.org/docs/latest/references/phpdoc/tags/license.html">Docblocks</a>.</li>
+            </ul>
+        </div>
+    </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_13" value="13" checked="checked">
+        <label class="checklist__label" for="item_13"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Welcome contributions</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">If you want help on your project, be sure to ask for it!</li>
+                <li class="checklist__details_item">Have a CONTRIBUTING file, welcoming contributions to the project.</li>
+                <li class="checklist__details_item">Use this file to explain any project requirements, such as tests.</li>
+            </ul>
+        </div>
+    </li>
+</ul>
+
+<div class="credits">
+    Brought to you by <a href="https://twitter.com/reinink">Jonathan Reinink</a>. Contribute on <a href="https://github.com/reinink/phppackagechecklist.com">GitHub</a>.
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56499316-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>

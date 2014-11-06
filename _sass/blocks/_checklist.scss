@@ -1,0 +1,129 @@
+.checklist {
+
+    margin: 60px auto 0 auto;
+    max-width: 900px;
+
+    &__item {
+        margin: 0 0 10px 0;
+        position: relative;
+    }
+
+    &__input {
+        display: none;
+        user-select: none;
+    }
+
+    &__label {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        background: #bd4646 url(../img/cross.png) no-repeat center center;
+        background-size: 50%;
+        cursor: pointer;
+        cursor: hand;
+        user-select: none;
+
+        &:hover {
+            background-color: darken(#bd4646, 5%);
+        }
+    }
+
+    &__input:checked ~ &__label {
+        background: #529963 url(../img/checkmark.png) no-repeat center center;
+        background-size: 60%;
+
+        &:hover {
+            background-color: darken(#529963, 5%);
+        }
+    }
+
+    &__input:checked ~ &__details {
+        color: #20592e;
+        background: #64b878;
+
+        a {
+            color: #20592e;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    &__details {
+        display: block;
+        margin: 0 0 10px 0;
+        padding: 30px 25px 15px 250px;
+        min-height: 200px;
+        color: #570404;
+        background: #da5b5b;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        a {
+            color: #570404;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    &__title {
+        color: white;
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    &__details_list {
+        list-style: circle;
+        margin: 20px 0 20px 20px;
+    }
+
+    &__details_item {
+        margin: 0 0 8px 0;
+        font-size: 18px;
+    }
+
+    @media only screen and (max-width: 399px) {
+
+        &__label {
+            position: static;
+            width: 100%;
+            height: 100px;
+            background-size: auto 130%;
+        }
+
+        &__input:checked ~ &__label {
+            background-size: auto 130%;
+        }
+
+        &__details {
+            padding: 25px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+    @media only screen and (min-width: 400px) and (max-width: 800px) {
+
+        &__label {
+            width: 100px;
+        }
+
+        &__details {
+            padding-left: 130px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.credits {
+
+    margin: 75px auto;
+    color: #777ca2;
+    font-size: 18px;
+    text-align: center;
+
+    a {
+        color: #777ca2;
+
+        &:hover {
+            color: white;
+        }
+    }
+}

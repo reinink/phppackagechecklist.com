@@ -1,0 +1,56 @@
+.intro {
+
+    margin: 75px 0 0 0;
+    text-align: center;
+
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        left: 25px;
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    &__title {
+        margin: 20px 0 0 0;
+        padding: 0 25px;
+        color: #777ca2;
+        font-size: 72px;
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    &__intro {
+        margin: 15px auto 0 auto;
+        padding: 0 25px;
+        max-width: 650px;
+        color: #e5e5e5;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    &__instructions {
+        margin: 35px auto 0 auto;
+        padding: 10px 0;
+        max-width: 450px;
+        color: #e5e5e5;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        background: #c5415e;
+    }
+
+    @media only screen and (max-width: 399px) {
+
+        &__logo {
+            left: 25px;
+            max-width: 250px;
+        }
+
+        &__title {
+            font-size: 60px;
+        }
+    }
+}
