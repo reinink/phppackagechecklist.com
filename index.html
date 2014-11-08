@@ -30,8 +30,8 @@
             <h2 class="checklist__title">Pick a name wisely</h2>
             <ul class="checklist__details_list">
                 <li class="checklist__details_item">Ensure the name isn't already used by another project.</li>
-                <li class="checklist__details_item">Use this name as your namespace.</li>
-                <li class="checklist__details_item">Avoid using last names or personal handles in namespaces.</li>
+                <li class="checklist__details_item">Maintain consistency between this name and your PHP namespace.</li>
+                <li class="checklist__details_item">Avoid using last names or personal handles your the PHP namespaces.</li>
             </ul>
         </div>
     </li>
@@ -39,11 +39,11 @@
         <input class="checklist__input" type="checkbox" id="item_2" value="2" checked="checked">
         <label class="checklist__label" for="item_2"></label>
         <div class="checklist__details">
-            <h2 class="checklist__title">Host source on GitHub</h2>
+            <h2 class="checklist__title">Host source openly</h2>
             <ul class="checklist__details_list">
-                <li class="checklist__details_item">GitHub is free to use for public projects.</li>
-                <li class="checklist__details_item">Very helpful for managing issues, feature requests and pull requests.</li>
-                <li class="checklist__details_item">Viable alternative: <a href="https://bitbucket.org/">Bitbucket</a></li>
+                <li class="checklist__details_item"><a href="https://github.com/">GitHub</a> is free to use for public projects.</li>
+                <li class="checklist__details_item">GitHub is helpful for managing issues, feature requests and pull requests.</li>
+                <li class="checklist__details_item">Alternatives: <a href="https://bitbucket.org/">Bitbucket</a>.</li>
             </ul>
         </div>
     </li>
@@ -55,7 +55,6 @@
             <ul class="checklist__details_list">
                 <li class="checklist__details_item">Use a <a href="http://www.php-fig.org/psr/psr-4/">PSR-4</a> compatible autoloader namespace.</li>
                 <li class="checklist__details_item">Place code in the <code>src</code> folder.</li>
-                <li class="checklist__details_item">Exclude non-essential files in <a href="https://www.reddit.com/r/PHP/comments/2jzp6k/i_dont_need_your_tests_in_my_production">.gitattributes</a>.</li>
             </ul>
         </div>
     </li>
@@ -88,8 +87,8 @@
             <h2 class="checklist__title">Follow a coding style</h2>
             <ul class="checklist__details_list">
                 <li class="checklist__details_item">Highly recommended that you adhere to <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PSR-2</a> coding style guide.</li>
-                <li class="checklist__details_item">Automatically check coding standards using <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a>.</li>
                 <li class="checklist__details_item">Do this quickly with an automated code fixer like <a href="http://cs.sensiolabs.org/">PHP Coding Standards Fixer</a>.</li>
+                <li class="checklist__details_item">Automatically check coding standards using <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a>.</li>
             </ul>
         </div>
     </li>
@@ -99,9 +98,9 @@
         <div class="checklist__details">
             <h2 class="checklist__title">Write unit tests</h2>
             <ul class="checklist__details_list">
-                <li class="checklist__details_item">Aim for at least 80% coverage in your first version.</li>
+                <li class="checklist__details_item">Aim to cover the majority of your code.</li>
                 <li class="checklist__details_item"><a href="https://phpunit.de/">PHPUnit</a> is the de facto PHP unit testing framework.</li>
-                <li class="checklist__details_item">Viable alternative: <a href="http://www.phpspec.net/">phpspec</a>, <a href="http://behat.org">Behat</a>, <a href="http://codeception.com/">Codeception</a>.</li>
+                <li class="checklist__details_item">Alternatives: <a href="http://www.phpspec.net/">phpspec</a>, <a href="http://behat.org">Behat</a>, <a href="http://codeception.com/">Codeception</a>.</li>
             </ul>
         </div>
     </li>
@@ -126,6 +125,7 @@
                 <li class="checklist__details_item">Use <a href="http://semver.org/">Semantic Versioning</a> to manage version numbers.</li>
                 <li class="checklist__details_item">Follow the MAJOR.MINOR.PATCH system.</li>
                 <li class="checklist__details_item">Allows devs to upgrade safely, without worry about breaking changes.</li>
+                <li class="checklist__details_item">Remember to tag releases in a timely manner!</li>
             </ul>
         </div>
     </li>
@@ -149,7 +149,7 @@
                 <li class="checklist__details_item">Use a service to automatically check coding standards and run tests.</li>
                 <li class="checklist__details_item">Great way to run tests on multiple versions of PHP.</li>
                 <li class="checklist__details_item">Can be automatically run when pull requests are submitted.</li>
-                <li class="checklist__details_item">See <a href="https://travis-ci.org/">Travis-CI</a> and <a href="https://scrutinizer-ci.com/">Scrutinizer</a>.</li>
+                <li class="checklist__details_item">See: <a href="https://travis-ci.org/">Travis-CI</a>, <a href="https://scrutinizer-ci.com/">Scrutinizer</a>, <a href="https://circleci.com/">Circle-CI</a>.</li>
             </ul>
         </div>
     </li>
@@ -162,6 +162,7 @@
                 <li class="checklist__details_item">Good documentation is vital to the success of any package.</li>
                 <li class="checklist__details_item">At a minimum include a detailed README in your repository.</li>
                 <li class="checklist__details_item">Consider hosting documentation on <a href="https://pages.github.com/">GitHub Pages</a>.</li>
+                <li class="checklist__details_item">Alternatives: <a href="https://readthedocs.org/">Read the Docs</a>.</li>
             </ul>
         </div>
     </li>
