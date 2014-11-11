@@ -1,17 +1,13 @@
 .share {
 
-    margin: 50px 0;
+    margin: 75px 0 100px 0;
     text-align: center;
-
-    &__center {
-
-    }
 
     &__title {
         margin: 0 0 25px 0;
-        color: #64b878;
+        color: #c5415e;
         font-weight: 900;
-        font-size: 30px;
+        font-size: 40px;
         font-style: italic;
         text-align: center;
     }
@@ -21,14 +17,10 @@
         width: 100%;
         max-width: 500px;
         height: 50px;
-        color: gray;
+        color: #e5e5e5;
         font-size: 16px;
         border: none;
         outline: none;
-        background: white;
-
-        &:focus {
-            color: #35364b;
-        }
+        background: #c5415e;
     }
 }
