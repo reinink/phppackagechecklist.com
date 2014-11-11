@@ -1,0 +1,21 @@
+.footer {
+
+    margin: 0 0 0 0;
+    padding: 50px 0;
+    background: darken(#35364b, 10%);
+
+    &__credits {
+
+        color: #777ca2;
+        font-size: 18px;
+        text-align: center;
+
+        a {
+            color: #777ca2;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
