@@ -1,0 +1,36 @@
+.skeleton {
+
+    margin: 60px auto 0 auto;
+    max-width: 900px;
+    display: block;
+    padding: 0;
+    color: #570404;
+    background: #da5b5b;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__title {
+        display: block;
+        padding-top: 20px;
+        line-height: 80px;
+        font-weight: 600;
+        font-size: 60px;
+    }
+
+    &__subtitle {
+        display: block;
+        line-height: 50px;
+        padding-bottom: 10px;
+        font-weight: 300;
+        font-size: 16px;
+        color: #eee;
+
+        & a {
+            text-decoration: underline;
+        }
+    }
+}

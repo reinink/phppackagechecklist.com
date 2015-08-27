@@ -1,5 +1,3 @@
----
----
 // Mixins
 @import "mixins/clearfix";
 
@@ -10,6 +8,7 @@
 
 // Blocks
 @import "blocks/intro";
+@import "blocks/skeleton";
 @import "blocks/checklist";
 @import "blocks/share";
 @import "blocks/further_reading";
