@@ -4,7 +4,7 @@
     text-align: center;
 
     &__logo {
-        display: block;
+        display: none;
         margin: 0 auto;
         position: relative;
         left: 25px;
@@ -26,20 +26,18 @@
         margin: 15px auto 0 auto;
         padding: 0 25px;
         max-width: 650px;
-        color: #e5e5e5;
+        color: lighten(#35364b, 15%);
         font-size: 20px;
-        line-height: 1.5;
+        line-height: 1.65;
     }
 
     &__instructions {
-        margin: 35px auto 0 auto;
-        padding: 10px 0;
-        max-width: 450px;
-        color: #e5e5e5;
+        margin: 35px 0;
+        color: #777ca2;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 15px;
+        text-align: center;
         text-transform: uppercase;
-        background: #c5415e;
     }
 
     @media only screen and (max-width: 399px) {

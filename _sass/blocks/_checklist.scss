@@ -1,6 +1,6 @@
 .checklist {
 
-    margin: 60px auto 0 auto;
+    margin: 50px auto 0 auto;
     max-width: 900px;
 
     &__item {
@@ -25,6 +25,7 @@
         cursor: pointer;
         cursor: hand;
         user-select: none;
+        box-shadow: 0 0 10px 5px rgba(black, .15) inset;
 
         &:hover {
             background-color: darken(#bd4646, 5%);
@@ -77,7 +78,7 @@
     &__title {
         color: white;
         font-weight: 600;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     &__details_list {
