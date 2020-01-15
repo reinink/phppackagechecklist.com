@@ -191,6 +191,18 @@
             </ul>
         </div>
     </li>
+    <li class="checklist__item">
+        <input class="checklist__input" type="checkbox" id="item_15" value="15" checked="checked">
+        <label class="checklist__label" for="item_15"></label>
+        <div class="checklist__details">
+            <h2 class="checklist__title">Keep a small dependency footprint</h2>
+            <ul class="checklist__details_list">
+                <li class="checklist__details_item">Don't rely on other packages unless they are mandatory. May be you could better <a href="https://getcomposer.org/doc/04-schema.md#suggest" target="_blank">suggest</a> them.</li>
+                <li class="checklist__details_item">Don't rely on a specific dependency-version. This could increase the chance to conflict with dependencies from other packages.</li>
+                <li class="checklist__details_item">Choose interfaces over implementations. This may require some glue-code, but you finally enable others to use application-specific components for caching, etc.</li>
+            </ul>
+        </div>
+    </li>
 </ul>
 
 <div class="share">
